@@ -36,8 +36,7 @@ nav>div>h1{
     color: white;
 }
 nav>div>h1>span{
-           color:linear-gradient(linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
-           
+           background: var(--Linear,linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));;
 }
     nav>div>li>{
 display: flex;
@@ -65,9 +64,7 @@ nav>div>ul>li>a{
 
 }
     
-.banner-container>img2{
-    transform: translate(50% 50%);
-}
+
 .banner-container>.rounded-mic-parent>.round-shape{
 box-sizing: border-box;
     margin: 0, auto;
@@ -177,24 +174,74 @@ color: #FFFFFF;
     font-weight: 800;
  text-align: center;
 }
-.banner-container>.container-bottom>.button-container>#spotify{
+.button-container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 20px;
+gap: 8px;
+}
+.button-container>.spotify{
+color: white;
+max-width: 200px;
+height: 44px;
+border-radius: 1000px;
+font-weight: 16px;
+background:var(--Linear,linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+text-align: center;
+gap: 8;
+padding: 12px 20px 12px 20px;
 align-items: center;
-background-color: 2px solid red;
+
+
 
 
 
 }
-.banner-container>.container-bottom>.button-container>.subs{
+.button-container>.subs{
 color: #00ff88;
 width: 147px;
 height: 44px;
-border-radius: 10px;
+border-radius: 1000px;
 font-weight: 16px;
 background: transparent;
-gap: 8px;
+padding: 12px 20px;
 align-items: center;
-box-sizing: border-box;
-border: 1px solid var(--#00FF88, rgba(0, 255, 136, 1));
+border: 1px solid var(--#00FF88, rgb(0, 255, 149));
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+box-sizing: border-box;
+}
+.about{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 200px;
+    gap: 16px;
+    background-color: #1A0B2E;
+    color: white;
+}
+.about>h2{
+
+    text-align: center;
+    background: 2 px solid red;
+    font-weight: 700;
+    font: bold;
+}
+.about>p{
+
+    width: 1200px;
+    height: 140px;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
+     font-weight: 400;
+     color:#FFFFFF
+}
+.about>.view-tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
